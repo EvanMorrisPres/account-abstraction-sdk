@@ -9,7 +9,8 @@
     "build": "lerna run build --stream",
     "test": "FORCE_COLOR=1 lerna run test --stream",
     "play": "ts-node ./playground/config/run.ts",
-    "lint:check": "eslint './packages/**/*.{js,jsx,ts,tsx}'"
+    "lint:check": "eslint './packages/**/*.{js,jsx,ts,tsx}'",
+    "prepare": "yarn && yarn build"
   },
   "workspaces": {
     "packages": [
